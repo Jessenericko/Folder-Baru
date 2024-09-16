@@ -1,0 +1,341 @@
+/* global */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a{
+    color: #262626;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* navigasi */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px; /* Ini adalah ukuran font default, bisa diubah */
+}
+
+.main-nav .logo {
+    width: 110px;
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Pusatkan menu di antara logo dan ikon */
+    margin-left: 20px; /* Jarak antara logo dan menu */
+    font-size: 16px; /* Ukuran font menu yang lebih besar */
+}
+
+.main-nav ul.main-menu li {
+    padding: 0 15px; /* Jarak antar item menu */
+}
+
+.main-nav ul.main-menu li a {
+    display: block;
+    padding: 10px 0; /* Padding atas dan bawah untuk memperbesar area klik */
+}
+
+
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    background: #262626;
+    color: white;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.dark{
+    color: white;
+}
+
+.dark .btn{
+    background: #f4f4f4;
+    color: #333;
+}
+
+.showcase {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.showcase-image {
+    width: 80%; /* Atur ukuran gambar lebih kecil */
+    max-width: 1000px; /* Maksimal lebar gambar */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Pusatkan gambar */
+}
+
+.showcase-text {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Tambahkan latar belakang transparan untuk teks */
+    color: white;
+}
+
+.showcase-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.showcase-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.showcase-text .btn {
+    background-color: #262626;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
+
+
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom dengan ukuran yang sama */
+    grid-gap: 20px;
+}
+
+.home-cards div {
+    text-align: center;
+}
+
+.home-cards img {
+    width: 100%; /* Mengatur lebar gambar agar sesuai dengan lebar kolom */
+    height: auto; /* Menjaga rasio aspek gambar */
+    max-height: 200px; /* Mengatur tinggi maksimal gambar agar seragam */
+    object-fit: cover; /* Memastikan gambar memenuhi kontainer tanpa merusak proporsi */
+    margin-bottom: 15px; /* Jarak antara gambar dan teks */
+}
+
+.home-cards h3 {
+    margin-bottom: 10px;
+}
+
+.home-cards a {
+    display: inline-block;
+    padding-top: 10px;
+    color: turquoise;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+/* display2 */
+.display2{
+    height: 350px;
+    background: url(img/xbox.png) no-repeat center center/cover;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.display2 .content{
+    width: 40%;
+    padding: 50px 0 0 30px;
+}
+
+.display2 p{
+    margin: 10px 0 20px;
+}
+
+/* display 3 */
+.display3{
+    width: 100%;
+    height: 350px;
+    background: url(assets/gambar1.png) no-repeat center center/cover;
+}
+
+.display3 .content{
+    width: 55%;
+    padding: 100px 0 0 30px;
+}
+
+.follow{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0 30px;
+}
+.follow *{
+    margin-right: 10px;
+}
+
+.links{
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.link-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.links li{
+    line-height: 2.8;
+}
+
+/* footer */
+.footer{
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+.footer-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer div{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer div i{
+    margin-right: 10px;
+}
+
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer li{
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* media 700px */
+@media(max-width:700px){
+    .home-cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .display2 p {
+        display:none ;
+    }
+    .display2 h2{
+        margin-bottom: 20px;
+    }
+
+    .display3 .content{
+        width: 85%;
+    }
+
+    .links .link-inner{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .menu-btn:hover{
+        opacity: 0.8;
+    }
+
+    .main-nav ul.main-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        transform: translateX(-500px);
+        border-right: #ccc 2px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    .main-nav ul.main-menu.show{
+        transform: translateX(-20px);
+    }
+
+    .main-nav ul.main-menu li{
+        padding:10px ;
+        border-bottom: #ccc 1px solid;
+        font-size: 14px;
+    }
+
+    .main-nav ul.right-menu{
+        margin-right: 50px;
+    }
+
+}
+
+/* media 500px */
+@media(max-width:500px){
+    .home-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .links .link-inner{
+        grid-template-columns: 1fr;
+    }
+
+    .links .link-inner ul{
+        margin-bottom: 20px;
+        margin: auto;
+    }
+}
