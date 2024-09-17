@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Kontak Kami</title>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+    
+    <!-- Navigasi -->
+    <div class="container">
+        <nav class="main-nav">
+            <img src="assets/logo.png" alt="logo" class="logo">
+            <ul class="main-menu show">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="makanansehat.html">Makanan Sehat</a></li>
+                <li><a href="olahraga.html">Olahraga</a></li>
+                <li><a href="gayahidup.html">Gaya Hidup</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>            
+        </nav>
+
+        <!-- Bagian Kontak -->
+        <section class="kontak-section">
+            <div class="kontak-info">
+                <h2>KONTAK</h2>
+                <p>Silakan menghubungi kami untuk informasi lebih lanjut</p>
+                <div class="kontak-detail">
+                    <h3><i class="fas fa-map-marker-alt"></i> ALAMAT</h3>
+                    <p>Jl. Letjen S. Parman No. 1, Jakarta Barat 11440
+                        021 - 56958723 (hunting) // humas@untar.ac.id</p>
+                    <h3><i class="fas fa-phone"></i> TELEPHONE</h3>
+                    <p>Tel: (021) 5221224 Fax: (021) 5203873</p>
+                </div>
+            </div>
+
+            <div class="formulir-kontak">
+                <h2>FORMULIR KONTAK</h2>
+                <p>Anda dapat menggunakan formulir dibawah ini untuk menghubungi kami</p>
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Nama Anda" required>
+                    <input type="text" name="job" placeholder="Pekerjaan Anda" required>
+                    <input type="email" name="email" placeholder="Email Anda" required>
+                    <input type="text" name="phone" placeholder="Nomor Telephone / Handphone Anda" required>
+                    <select name="contact-type" required>
+                        <option value="" disabled selected>Pilih Jenis Kontak</option>
+                        <option value="pertanyaan">Pertanyaan</option>
+                        <option value="masukan">Masukan</option>
+                    </select>
+                    <textarea name="message" placeholder="Pesan" required></textarea>
+                    <div class="captcha">
+                        <input type="checkbox" required> Saya bukan robot
+                    </div>
+                    <button type="submit" class="btn">Kirim</button>
+                </form>
+
+                <!-- Notifikasi setelah form dikirim -->
+                <p id="notification" style="display: none; color: green; font-weight: bold;">
+                    Pesan Anda berhasil dikirim!
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div><i class="fas fa-globe fa-2x"></i> Bahasa Indonesia</div>
+            <ul>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Kontak Kami</a></li>
+                <li><a href="#">Privasi & Kebijakan</a></li>
+                <li><a href="#">Syarat Penggunaan</a></li>
+                <li><a href="#">Hak Cipta</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Tambahkan script.js -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -391,3 +391,119 @@ img.header-img {
     height: auto;
     object-fit: contain;
 }
+
+
+/* Kontak Section */
+.kontak-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.kontak-info, .formulir-kontak {
+    width: 48%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk informasi kontak */
+.kontak-info h2, .formulir-kontak h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.kontak-info p, .formulir-kontak p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.kontak-detail h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.kontak-detail p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Style untuk formulir kontak */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.captcha {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.captcha input {
+    margin-right: 10px;
+}
+
+form button.btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button.btn:hover {
+    background-color: #218838;
+}
+
+/* Responsiveness */
+@media (max-width: 700px) {
+    .kontak-section {
+        flex-direction: column;
+    }
+
+    .kontak-info, .formulir-kontak {
+        width: 100%;
+    }
+}
+
+#notification {
+    display: none;
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white; /* Background tetap putih */
+    color: black !important; /* Warna teks hitam dengan !important */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    transition: top 0.5s ease-in-out;
+    border: 2px solid black; /* Border hitam untuk kejelasan */
+}
+
+#notification.show {
+    top: 20px;
+}
+
+
