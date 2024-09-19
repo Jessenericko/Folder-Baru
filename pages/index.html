@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Gaya Hidup Sehat</title>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+    
+    <!-- Navigasi -->
+    <div class="container">
+        <nav class="main-nav">
+            <img src="/assets/logo.png" alt="logo" class="logo">
+            <ul class="main-menu show">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="makanansehat.html">Makanan Sehat</a></li>
+                <li><a href="olahraga.html">Olahraga</a></li>
+                <li><a href="gayahidup.html">Gaya Hidup</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <!-- Showcase -->
+        <header class="showcase">
+            <img src="/assets/gambar1.png" alt="Showcase Image" class="showcase-image">
+            <div class="showcase-text">
+                <h2>Gaya Hidup Sehat</h2>
+                <p>
+                    Blog yang membahas seputar makanan sehat, olahraga, dan gaya hidup yang mendukung kesehatan.
+                </p>
+                <a href="gayahidup.html" class="btn">
+                    Pelajari Lebih Lanjut <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- Home Cards Section -->
+        <section class="home-cards">
+            <div>
+                <img src="/assets/makanansehat.png" alt="Makanan Sehat">
+                <h3>Makanan Sehat</h3>
+                <p>
+                    Jelajahi resep-resep makanan sehat yang lezat dan bergizi.
+                </p>
+                <a href="makanansehat.html"> Pelajari Lebih Lanjut <i class="fas fa-chevron-right"></i> </a>
+            </div>
+            <div>
+                <img src="/assets/olahraga.png" alt="Olahraga">
+                <h3>Olahraga</h3>
+                <p>
+                    Temukan tips olahraga yang bisa kamu lakukan di rumah atau di gym.
+                </p>
+                <a href="olahraga.html"> Pelajari Lebih Lanjut <i class="fas fa-chevron-right"></i> </a>
+            </div>
+            <div>
+                <img src="/assets/gayahidup.png" alt="Gaya Hidup">
+                <h3>Gaya Hidup</h3>
+                <p>
+                    Bagaimana menjaga keseimbangan antara pekerjaan, relaksasi, dan hobi.
+                </p>
+                <a href="gayahidup.html"> Pelajari Lebih Lanjut <i class="fas fa-chevron-right"></i> </a>
+            </div>
+        </section>
+        
+        <!-- Pop-up -->
+        <div class="overlay" id="popupOverlay" style="display: none;">
+            <div class="popup">
+                <h2>Watch This Video</h2>
+                <video id="popupVideo" controls preload="auto">
+                    <source src="/assets/vidio.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <br>
+                <button class="close-btn" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+
+        <!-- Social Media -->
+        <section class="follow">
+            <p>Ikuti Kami</p>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">
+                <img src="/assets/social-fb.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/wwwgombel117279" target="_blank">
+                <img src="/assets/x.png" alt="Twitter/X">
+            </a>
+            <a href="https://www.linkedin.com/in/heru-purnomo-a111102a0/" target="_blank">
+                <img src="/assets/social-linkedin.png" alt="Linkedin">
+            </a>
+            <a href="https://www.instagram.com/jessenericko/" target="_blank">
+                <img src="/assets/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@jessenericko232?_t=8pnm3LiH2Vl&_r=1" target="_blank">
+                <img src="/assets/TT.png" alt="TikTok">
+            </a>
+        </section>
+        
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div><i class="fas fa-globe fa-2x"></i> Bahasa Indonesia</div>
+            <ul>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Kontak Kami</a></li>
+                <li><a href="#">Privasi & Kebijakan</a></li>
+                <li><a href="#">Syarat Penggunaan</a></li>
+                <li><a href="#">Hak Cipta</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Menghubungkan file JavaScript eksternal -->
+    <script src="/vidio-script.js"></script>
+</body>
+</html>
