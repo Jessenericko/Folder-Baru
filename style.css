@@ -72,7 +72,7 @@ ul{
 }
 
 .main-nav ul.main-menu li.has-submenu ul.submenu li {
-    padding: 10px 20px; /* Spasi dalam sub-menu */
+    padding: 10px 20px; 
 }
 
 .main-nav ul.main-menu li.has-submenu ul.submenu li a {
@@ -80,7 +80,7 @@ ul{
 }
 
 .main-nav ul.main-menu li.has-submenu:hover ul.submenu {
-    display: block; /* Tampilkan sub-menu saat hover */
+    display: block; 
 }
 
 .menu-btn{
@@ -290,7 +290,7 @@ ul{
 /* media 700px */
 @media(max-width:700px){
     .main-nav ul.main-menu {
-        flex-direction: column; /* Biar menu menjadi kolom */
+        flex-direction: column;
     }
 
     .main-nav ul.main-menu li.has-submenu ul.submenu {
@@ -298,7 +298,7 @@ ul{
     }
 
     .main-nav ul.main-menu li.has-submenu:hover ul.submenu {
-        display: none; /* Hilangkan hover pada mobile */
+        display: none; 
     }
 
     .main-nav ul.main-menu li.has-submenu .submenu-btn {
