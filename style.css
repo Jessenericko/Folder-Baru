@@ -47,10 +47,12 @@ ul{
     justify-content: center; /* Pusatkan menu di antara logo dan ikon */
     margin-left: 20px; /* Jarak antara logo dan menu */
     font-size: 16px; /* Ukuran font menu yang lebih besar */
+    position: relative;
 }
 
 .main-nav ul.main-menu li {
     padding: 0 15px; /* Jarak antar item menu */
+    position: relative; 
 }
 
 .main-nav ul.main-menu li a {
@@ -58,6 +60,28 @@ ul{
     padding: 10px 0; /* Padding atas dan bawah untuk memperbesar area klik */
 }
 
+.main-nav ul.main-menu li.has-submenu ul.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none; /* Sembunyikan sub-menu secara default */
+    background-color: white; /* Warna background sub-menu */
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Pastikan sub-menu di atas konten lain */
+}
+
+.main-nav ul.main-menu li.has-submenu ul.submenu li {
+    padding: 10px 20px; /* Spasi dalam sub-menu */
+}
+
+.main-nav ul.main-menu li.has-submenu ul.submenu li a {
+    font-size: 14px;
+}
+
+.main-nav ul.main-menu li.has-submenu:hover ul.submenu {
+    display: block; /* Tampilkan sub-menu saat hover */
+}
 
 .menu-btn{
     cursor: pointer;
@@ -265,6 +289,23 @@ ul{
 
 /* media 700px */
 @media(max-width:700px){
+    .main-nav ul.main-menu {
+        flex-direction: column; /* Biar menu menjadi kolom */
+    }
+
+    .main-nav ul.main-menu li.has-submenu ul.submenu {
+        position: relative;
+    }
+
+    .main-nav ul.main-menu li.has-submenu:hover ul.submenu {
+        display: none; /* Hilangkan hover pada mobile */
+    }
+
+    .main-nav ul.main-menu li.has-submenu .submenu-btn {
+        display: inline-block;
+        margin-left: auto;
+    }
+    
     .home-cards {
         grid-template-columns: repeat(2,1fr);
     }
